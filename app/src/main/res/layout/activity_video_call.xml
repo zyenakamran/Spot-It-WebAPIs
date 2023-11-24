@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VideoCall">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/cameraView"
+            android:layout_width="match_parent"
+            android:layout_height="575dp"
+            android:background="@drawable/sharp_rectangle"
+            android:backgroundTint="#9E9A9A9A"/>
+
+        <LinearLayout
+            android:id="@+id/callerLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/callTimeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="00:58"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/light_black"
+                android:layout_weight="1" />
+            <ImageView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/rectangle"
+                android:backgroundTint="#F0FFFFFF"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/callOptsSliderButton"
+            android:layout_width="50dp"
+            android:layout_height="4dp"
+            android:background="@drawable/curved_rectangle"
+            android:backgroundTint="#9E9A9A9A"
+            android:layout_below="@id/cameraView"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"/>
+
+            <LinearLayout
+                android:id="@+id/callOpts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:weightSum="4">
+
+                <Button
+                    android:id="@+id/muteButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mute"/>
+
+                <Button
+                    android:id="@+id/camOffButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/camera_off" />
+
+                <Button
+                    android:id="@+id/reverseCamButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/reverse_cam_call"/>
+                <Button
+                    android:id="@+id/endCallButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:background="@drawable/end_call"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

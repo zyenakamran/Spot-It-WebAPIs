@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Item">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/backArrowIcon"
+            android:layout_marginLeft="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/back_arrow"
+            app:tint="#454545" />
+
+        <TextView
+            android:id="@+id/itemHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/backArrowIcon"
+            android:text="Item"
+            android:textColor="#454545"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/reportButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:text="Rate and Review"
+            android:textSize="18dp"
+            android:textColor="@color/orange"
+            android:textStyle="bold"
+            android:layout_marginEnd="25dp"
+            android:layout_alignParentRight="true"/>
+
+
+        <ImageView
+            android:id="@+id/itemImg"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/backArrowIcon"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/sharp_rectangle"/>
+
+        <ImageView
+            android:id="@+id/circle2"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@id/itemImg"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="120dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/circle"/>
+        <ImageView
+            android:id="@+id/circle3"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_toRightOf="@id/circle2"
+            android:layout_alignBottom="@id/itemImg"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/circle"/>
+        <ImageView
+            android:id="@+id/circle4"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_toRightOf="@id/circle3"
+            android:layout_alignBottom="@id/itemImg"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="370dp"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/circle"/>
+        <ImageView
+            android:id="@+id/circle1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="155dp"
+            android:layout_alignBottom="@id/itemImg"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/orange"
+            android:background="@drawable/circle"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/itemImg"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/itemPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="$12"
+                    android:textColor="@color/orange"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/priceHour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/itemPrice"
+                    android:text="/ hr"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/deleteItem"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_toRightOf="@+id/priceHour"
+                    android:layout_marginLeft="250dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/delete"/>
+
+
+                <TextView
+                    android:id="@+id/itemName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/itemPrice"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Name of the Item comes Here"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/itemName"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/location" />
+
+                <TextView
+                    android:id="@+id/locationText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/itemName"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:alpha="0.4"
+                    android:text="Islamabad"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/dateText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/itemName"
+                    android:layout_marginLeft="158dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/locationText"
+                    android:alpha="0.4"
+                    android:text=" 7th Mar, 2023"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/descriptionText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/locationText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Mauris nec nisi a sem
+                                elementum condimentum. Proin volutpat erat
+                                tortor, eu gravida orci efficitur eget."
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profilePic"
+                    android:layout_width="40dp"
+                    android:layout_height="42dp"
+                    android:layout_below="@id/descriptionText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/circle" />
+
+                <TextView
+                    android:id="@+id/nameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/descriptionText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_toRightOf="@id/profilePic"
+                    android:text="Zyena"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/itemCountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nameText"
+                    android:layout_marginLeft="60dp"
+                    android:alpha="0.4"
+                    android:text="0 items rented"
+                    android:textColor="@color/black"
+                    android:textSize="11dp" />
+
+                <ImageView
+                    android:id="@+id/chatButtonBg"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/descriptionText"
+                    android:layout_marginLeft="245dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/profilePic"
+                    android:background="@drawable/circle" />
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/descriptionText"
+                    android:layout_marginLeft="256dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@id/profilePic"
+                    android:background="@drawable/chat_button" />
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/profilePic"
+                    android:layout_marginTop="12dp"
+                    android:alpha="0.1"
+                    android:background="@color/black" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/rentButton"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectangle"
+                android:backgroundTint="@color/orange"
+                android:text="Rent It"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

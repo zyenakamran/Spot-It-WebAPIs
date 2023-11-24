@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/img_msg_view"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:layout_marginLeft="35dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="55dp"
+    android:layout_marginBottom="15dp"
+    android:background="@drawable/curved_rectangle"
+    android:orientation="vertical"
+    android:layout_gravity="end"
+    android:padding="10dp"    >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:padding="10dp"
+        android:src="@mipmap/ic_launcher" />
+    <TextView
+        android:id="@+id/timestamp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        android:text="12:35"
+        android:layout_gravity="bottom"
+        android:gravity="end"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:id="@+id/requestItemView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_margin="5dp"
+                android:background="#000000" />
+            <ImageView
+                android:id="@+id/itemImg"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/profile_pic1"/>
+            <TextView
+                android:id="@+id/itemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item name"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/itemImg"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/requestId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Request Id"
+                android:layout_below="@+id/itemName"
+                android:layout_toRightOf="@+id/itemImg"
+                android:paddingLeft="10dp"/>
+            <TextView
+                android:id="@+id/itemPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$12"
+                android:layout_below="@+id/requestId"
+                android:textColor="@color/orange"
+                android:layout_toRightOf="@+id/itemImg"
+                android:padding="10dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_toRightOf="@id/itemName"
+                android:padding="5dp"
+                android:layout_marginLeft="150dp">
+
+                <ImageView
+                    android:id="@+id/acceptButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/accept"/>
+                <ImageView
+                    android:id="@+id/rejectButton"
+                    android:padding="3dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/cross"/>
+
+
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignBottom="@+id/itemImg"
+                android:background="#000000" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+
+

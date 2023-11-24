@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Report">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/backArrowIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/back_arrow"
+            app:tint="#454545" />
+
+        <TextView
+            android:id="@+id/reportHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/backArrowIcon"
+            android:text="Rate and Review"
+            android:textColor="#454545"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/headingEndLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/backArrowIcon"
+            android:layout_marginStart="-20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="-20dp"
+            android:background="@color/light_grey"
+            android:clipToPadding="false" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="70dp"
+                android:layout_below="@+id/headingEndLine"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/reportText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Leave a review"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/reportReasonBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="top"
+                    android:background="@drawable/rectangle"
+                    android:hint="Enter review here"
+                    android:padding="13dp"
+                    android:textSize="18dp" />
+
+                <RatingBar
+                    android:id="@+id/rating"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5" />
+
+
+
+            </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/submitReportButton"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/rectangle"
+            android:backgroundTint="@color/orange"
+            android:text="Submit Review"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+</LinearLayout>

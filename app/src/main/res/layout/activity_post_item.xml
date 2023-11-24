@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".PostItem">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/crossIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/cross"
+            app:tint="#454545" />
+
+        <TextView
+            android:id="@+id/ItemHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/crossIcon"
+            android:text="Item"
+            android:textColor="#454545"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/headingEndLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/ItemHeading"
+            android:layout_marginStart="-20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="-20dp"
+            android:background="@color/light_grey"
+            android:clipToPadding="false" />
+
+        <LinearLayout
+            android:id="@+id/uploadLL"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_below="@id/headingEndLine"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/uploadPhotoButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/upload_img"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"/>
+            <ImageView
+                android:id="@+id/uploadVidButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/upload_video"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="70dp"
+            android:scrollbars="none"
+            android:layout_below="@+id/uploadLL">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="70dp"
+                android:layout_below="@+id/uploadLL"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nameText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Name"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/nameTextBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rectangle"
+                    android:hint="Enter name"
+                    android:paddingLeft="13dp"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/hourlyRateText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Hourly Rate"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/hourlyRateTextBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rectangle"
+                    android:hint="Enter hourly rate"
+                    android:paddingLeft="13dp"
+                    android:textSize="18dp" />
+
+
+                <TextView
+                    android:id="@+id/descriptionText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Description"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/descriptionBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="top"
+                    android:background="@drawable/rectangle"
+                    android:hint="Enter description"
+                    android:padding="13dp"
+                    android:textSize="18dp" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/cityText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="City"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:id="@+id/citySpinnerBg"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@id/cityText"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/rectangle" />
+
+
+                    <Spinner
+                        android:id="@+id/citySpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@id/cityText"
+                        android:layout_marginTop="5dp"
+                        android:entries="@array/item_city_array"
+                        android:paddingLeft="13dp"
+                        android:spinnerMode="dropdown" />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/postItemButton"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/rectangle"
+            android:backgroundTint="@color/orange"
+            android:text="Post Item"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+</LinearLayout>

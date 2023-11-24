@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".Rent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/calculateRentText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rent Calculation"
+            android:textColor="@color/black"
+
+            android:textSize="25dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/hoursText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calculateRentText"
+            android:text="Enter the number of rent hours"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/hoursTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/hoursText"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectangle"
+            android:hint="Enter hours"
+            android:paddingLeft="13dp"
+            android:textSize="20dp" />
+
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_below="@id/hoursTextBox"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rectangle"
+            android:backgroundTint="@color/orange"
+            android:text="Calculate"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/totalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Total:"
+            android:textColor="@color/dark_grey"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/priceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/totalText"
+            android:layout_centerHorizontal="true"
+            android:text="$0"
+            android:textColor="@color/dark_grey"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/rentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/priceText"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/orange"
+            android:text="Rent It!"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/goBackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:text="Go Back"
+            android:textColor="@color/dark_grey"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:id="@+id/activity_login"
+    tools:context=".Login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="224dp"
+            app:srcCompat="@drawable/logo"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="245dp" />
+
+        <TextView
+            android:id="@+id/loginText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_marginTop="-38dp"
+            android:text="Login"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/emailText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginText"
+            android:text="Email"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/emailTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/emailText"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectangle"
+            android:hint="Enter Email"
+            android:paddingLeft="13dp"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/passwordText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailTextBox"
+            android:text="Password"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/passwordTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/passwordText"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectangle"
+            android:inputType="textPassword"
+            android:hint="Enter Password"
+            android:paddingLeft="13dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/forgotPassText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordTextBox"
+            android:text="Forgot your password?"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="135dp"
+            android:textColor="@color/orange"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_below="@id/forgotPassText"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rectangle"
+            android:backgroundTint="@color/orange"
+            android:text="Login"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+
+        <TextView
+            android:id="@+id/SignupText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:text="Sign Up"
+            android:textColor="@color/dark_grey"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</LinearLayout>

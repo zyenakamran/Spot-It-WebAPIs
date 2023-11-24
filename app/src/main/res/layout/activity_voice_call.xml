@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VoiceCall">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/cameraView"
+            android:layout_width="match_parent"
+            android:layout_height="535dp"
+            android:background="@drawable/sharp_rectangle"
+            android:backgroundTint="#9E9A9A9A"/>
+
+        <LinearLayout
+            android:id="@+id/callerLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/callerNameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Caller Name"
+                android:textColor="@color/light_black"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/callTimeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="00:58"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/dark_grey"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/callOptsSliderButton"
+            android:layout_width="50dp"
+            android:layout_height="4dp"
+            android:background="@drawable/curved_rectangle"
+            android:backgroundTint="#9E9A9A9A"
+            android:layout_below="@id/cameraView"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:id="@+id/callLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/callOpts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:weightSum="3">
+
+                <Button
+                    android:id="@+id/muteButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mute"/>
+
+                <Button
+                    android:id="@+id/speakerButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/speaker" />
+
+                <Button
+                    android:id="@+id/pauseCamButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/pause"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/endCallButton"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/end_call"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

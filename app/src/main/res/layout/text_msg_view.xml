@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_msg_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="45dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="15dp"
+    android:background="@drawable/curved_rectangle"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/voice_msg_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/displayPic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="top"
+            android:src="@mipmap/ic_launcher"/>
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight = "10dp"
+            android:paddingBottom="20dp"
+            android:text="ble for iOS, Android and Javascript The downloads provide Sinch SDK Framework for Voice and Video, as well as documentation and sample applications for app-to-app calling, app-to-phone calling, and conference calling and video."/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/timestamp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="12:36"
+        android:paddingRight="10dp"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/voice_msg_LL"
+        android:gravity="end"/>
+    <ImageView
+        android:id="@+id/editMsg"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:src="@drawable/edit_profile"
+        android:layout_alignBottom="@+id/voice_msg_LL" />
+    <ImageView
+        android:id="@+id/deleteMsg"
+        android:layout_width="20dp"
+        android:layout_height="19dp"
+        android:src="@drawable/delete"
+        android:layout_alignBottom="@+id/voice_msg_LL"
+        android:layout_toRightOf="@+id/editMsg" />
+
+
+
+</RelativeLayout>

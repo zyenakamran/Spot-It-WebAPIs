@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">i200802_i200707</string>
+
+
+    <string-array name="country_array">
+        <item>Select Country</item>
+        <item>Pakistan</item>
+        <item>India</item>
+        <item>Iran</item>
+    </string-array>
+
+    <string-array name="item_country_array">
+        <item>Pakistan</item>
+        <item>India</item>
+        <item>Iran</item>
+    </string-array>
+
+    <string-array name="city_array">
+        <item>Select City</item>
+        <item>Rawalpindi</item>
+        <item>Delhi</item>
+        <item>Islamabad</item>
+    </string-array>
+
+    <string-array name="item_city_array">
+        <item>Islamabad</item>
+        <item>Rawalpindi</item>
+        <item>Delhi</item>
+    </string-array>
+
+    <string-array name="search_array">
+        <item>Best Match</item>
+        <item>Featured</item>
+        <item>Latest</item>
+        <item>Popular</item>
+    </string-array>
+
+</resources>

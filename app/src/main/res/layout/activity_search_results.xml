@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".SearchResults">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/back_arrow"
+            app:tint="#454545" />
+
+        <TextView
+            android:id="@+id/searchResultsHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/backArrow"
+            android:text="Search Results"
+            android:textColor="#454545"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/headingEndLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/searchResultsHeading"
+            android:layout_marginStart="-20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="-20dp"
+            android:background="@color/light_grey"
+            android:clipToPadding="false" />
+
+        <ImageView
+            android:id="@+id/searchSpinnerBg"
+            android:layout_width="175dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/headingEndLine"
+            android:layout_marginTop="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:src="@drawable/rectangle" />
+
+        <LinearLayout
+            android:id="@+id/searchLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:layout_below="@+id/headingEndLine"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:textColor="@color/light_black"
+                android:layout_weight="1"
+                android:text="Some Item"/>
+
+
+            <Spinner
+                android:id="@+id/searchSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:entries="@array/search_array"
+                android:paddingLeft="13dp"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/searchLL"
+            android:scrollbars="none">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/searchResultsRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+</LinearLayout>

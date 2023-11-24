@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Chat">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/chatHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chat"
+            android:textColor="@color/dark_grey"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/headingEndLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/chatHeading"
+            android:layout_marginStart="-20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="-20dp"
+            android:background="@color/light_grey"
+            android:clipToPadding="false" />
+
+
+        <LinearLayout
+            android:id="@+id/chatMessageLL1"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/headingEndLine"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+
+            <ImageView
+                android:id="@+id/profilePic1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/profile_pic1"
+                android:layout_gravity="end"
+                android:layout_marginEnd="16dp"/>
+
+            <LinearLayout
+                android:id="@+id/chatMessageDetailsLL1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nameText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Makenna Dias"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/messageCountText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 new message"
+                    android:textColor="@color/orange"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/rightArrowButton1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/right_arrow"
+                android:layout_gravity="end|center_vertical"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chatMessageLL2"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chatMessageLL1"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+
+            <ImageView
+                android:id="@+id/profilePic2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/profile_pic2"
+                android:layout_gravity="end"
+                android:layout_marginEnd="16dp"/>
+
+            <LinearLayout
+                android:id="@+id/chatMessageDetailsLL2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nameText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Miracle Phillips"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/messageCountText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No new message"
+                    android:textColor="#905A5A5A"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/rightArrowButton2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/right_arrow"
+                android:layout_gravity="end|center_vertical"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chatMessageLL3"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chatMessageLL2"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+
+            <ImageView
+                android:id="@+id/profilePic3"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/profile_pic3"
+                android:layout_gravity="end"
+                android:layout_marginEnd="16dp"/>
+
+            <LinearLayout
+                android:id="@+id/chatMessageDetailsLL3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nameText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zaire Gouse"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/messageCountText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No new message"
+                    android:textColor="#905A5A5A"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/rightArrowButton3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/right_arrow"
+                android:layout_gravity="end|center_vertical"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/bottomNavBar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:paddingTop="20dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:weightSum="5">
+
+            <Button
+                android:id="@+id/homeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/home"/>
+
+            <Button
+                android:id="@+id/searchButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/search"/>
+            <Button
+                android:id="@+id/addButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/add"/>
+            <Button
+                android:id="@+id/chatButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+
+                android:backgroundTint="@color/orange"
+                android:layout_weight="1"
+                android:background="@drawable/chat"/>
+            <Button
+                android:id="@+id/profileButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/profile"/>
+
+
+        </LinearLayout>
+        <View
+            android:id="@+id/bottomNavBarLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignTop="@+id/bottomNavBar"
+            android:layout_marginStart="-20dp"
+            android:layout_marginEnd="-20dp"
+            android:background="@color/light_grey" />
+
+    </RelativeLayout>
+
+</LinearLayout>
